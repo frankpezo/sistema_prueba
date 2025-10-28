@@ -84,7 +84,7 @@ class ProductoController extends Controller
         ]);
     }
 
-    return redirect()->route('index.venta')->with('success', 'Producto eliminado y totales actualizados.');
+    return redirect()->route('index.productos')->with('success', 'Producto eliminado y totales actualizados.');
 }
 
 
