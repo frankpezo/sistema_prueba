@@ -62,7 +62,7 @@ class ProductoController extends Controller
  public function destroy($iddetalle)
 {
     // Eliminar lógicamente el detalle
-    $detalle = DetalleVenta::findOrFail($iddetalle);
+    $detalle = Producto::findOrFail($iddetalle);
     $detalle->update([
         'estado' => 0,
     ]);
